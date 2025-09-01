@@ -1,0 +1,184 @@
+/* Institute for Public Mechanics Landing Page Styles */
+
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #666;
+    --accent-color: #0066cc;
+    --background-color: #ffffff;
+    --border-color: #e5e5e5;
+    --max-width: 680px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    /* Replace with custom font when purchased: */
+    /* font-family: 'YourCustomFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; */
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    font-size: 16px;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 0 3rem 0;
+    text-align: left;
+}
+
+.institute-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.tagline {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    max-width: 600px;
+}
+
+/* About Section */
+.about {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--primary-color);
+}
+
+/* Principles Preview */
+.principles-preview {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.principles-preview h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.principles-intro {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.principles-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.principles-link:hover {
+    color: var(--primary-color);
+}
+
+/* Contact Section */
+.contact {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+.site-footer {
+    padding: 2rem 0 3rem 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+.site-footer p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .hero {
+        padding: 3rem 0 2rem 0;
+    }
+    
+    .institute-name {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .about, .principles-preview, .contact {
+        padding: 2.5rem 0;
+    }
+    
+    .description, .contact-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .institute-name {
+        font-size: 1.75rem;
+    }
+    
+    .tagline, .principles-intro {
+        font-size: 1rem;
+    }
+}
